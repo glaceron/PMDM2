@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewFragment"
+        android:layout_width="111dp"
+        android:layout_height="152dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/todo"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <TextView
+        android:id="@+id/textViewFragmentTitulo"
+        android:layout_width="249dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFragment"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFragment" />
+
+    <TextView
+        android:id="@+id/textViewFragmentAutor"
+        android:layout_width="248dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#020101"
+        app:layout_constraintStart_toStartOf="@+id/textViewFragmentTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentTitulo" />
+
+    <TextView
+        android:id="@+id/textViewFragmentEditorialTexto"
+        android:layout_width="53dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="4dp"
+        android:text="Editorial:"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewFragmentAutor"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFechaTexto" />
+
+    <TextView
+        android:id="@+id/textViewFragmentEditorial"
+        android:layout_width="157dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewFragmentEditorialTexto"
+        app:layout_constraintStart_toEndOf="@+id/textViewFragmentEditorialTexto"
+        app:layout_constraintTop_toTopOf="@+id/textViewFragmentEditorialTexto" />
+
+    <TextView
+        android:id="@+id/textViewFechaTexto"
+        android:layout_width="45dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="28dp"
+        android:text="Fecha:"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewFragmentAutor"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentAutor" />
+
+    <TextView
+        android:id="@+id/textViewFragmentFecha"
+        android:layout_width="134dp"
+        android:layout_height="23dp"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewFechaTexto"
+        app:layout_constraintStart_toStartOf="@+id/textViewFragmentEditorial"
+        app:layout_constraintTop_toTopOf="@+id/textViewFechaTexto" />
+
+    <TextView
+        android:id="@+id/textViewSinopsisTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Sinopsis:"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFragment" />
+
+    <TextView
+        android:id="@+id/textViewFragmentSinopsis"
+        android:layout_width="348dp"
+        android:layout_height="465dp"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewSinopsisTexto"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSinopsisTexto" />
+</androidx.constraintlayout.widget.ConstraintLayout>
